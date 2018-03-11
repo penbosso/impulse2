@@ -32,6 +32,14 @@
          ?>
         </table>
     </div>
-    <div class="footer">2018 forloop (c) all Rights reserved </div>    
+    <div class="footer">
+        <strong>&copy;
+            <script type="text/javascript">
+                var d = new Date()
+                document.write(d.getFullYear())
+            </script>
+            Impulse
+</strong>
+    </div>    
 </body>
 </html>

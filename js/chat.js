@@ -10,7 +10,7 @@ $(document).ready(function () {
         var chatInputString = $chatInput.val();
 
             if($('#impulseBox').is(':checked')) { 
-                
+                $('#impulseBox').prop('checked', false);
 				//${app_url}
                 $.get(`../page/write_impulse_chat.php`, {
                     text: chatInputString

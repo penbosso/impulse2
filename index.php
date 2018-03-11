@@ -36,7 +36,7 @@
         height: 100%
         margin:0;
 
-          background-image: url("img/home.jpg");
+          background-image: url("img/impulse.png");
           height: 100%
           background-position:center;
           background-repeat: no-repeat;
@@ -156,15 +156,13 @@ footer{
        
         </div>
        
-       
-       <li id="logout"><a href="include/logout.php" >Logout</a></li>
    </ul>
 </div>
 <h1><p class="p">Hey There!!</p>
 <p id="p1">IMPULSE </p>
 <p class="p"></p>
 </h1>
-<p style="padding-left:75px;">Learning is Fun</p>
+<p style="padding-left:75px;">Communication is Fun</p>
 <p><a href="page/login.php"><button type="button" name="button" class="button"><span>Let's Get Started</span></button>
 </a>
 </p>
@@ -176,7 +174,7 @@ footer{
   var d = new Date()
   document.write(d.getFullYear())
 </script>
-Quizbee</strong>
+Impulse</strong>
 </footer>
 
   </body>

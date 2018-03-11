@@ -33,6 +33,7 @@ class Session{
 		unset($this->user_id);
 		$this->logged_in = false;
 	}
+	
 	public function message($msg=""){
 		if(!empty($msg)){
 			$_SESSION['message'] = $msg;

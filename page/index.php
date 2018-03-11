@@ -2,14 +2,15 @@
     <div class="centre_pane">
         <!-- //sticky -->
         <div id="know">
-                <h2><em>Message Box</em><br><h2>Chat</h2></h2>
+                <h2><em id="emph" >Chat Box</em><div id="my_logo"></div></h2>
             <div class="chat">
                 <div id="chatOutput" ></div>
                 <input id="chatInput" type="text" placeholder="Input Text here"  >
                 <button id="chatSend">Send</button>
-                <input id="impulesBox" type="checkbox"  ><i>impulse!!!</i>
+                <input id="impulseBox" type="radio"  ><i>impulse!!!</i>
+                <p>Check impulse if the message you want to send is important and you want offline users to receive the message via sms. Charges apply.</p>
             </div>
-		<p> <?php echo $session->message() ?> </p>
+		<!-- <p> <?php //echo $_SESSION['message']; ?> </p> -->
     </div>
             
     </div>

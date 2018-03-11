@@ -12,11 +12,11 @@ class MySQLDatabase{
 	function open_connection(){		
 		$this->connection = mysqli_connect(DB_SERVER,DB_USER,DB_PASS);
 		if(!$this->connection){
-			die("Database connection failed: ".mysql_error());
+			die("Database connection failed: ".mysqli_error($this->connection));
 		} else{
 			$db_select = mysqli_select_db($this->connection,DB_NAME);
 			if(!$db_select){
-				die("Database selection failed: ".mysql_error());
+				die("Database selection failed: ".mysqli_error($this->connection));
 			}
 		} 
 	}
@@ -34,7 +34,7 @@ class MySQLDatabase{
 	}
 	private function confirm_query($result){
 		if(!$result){
-			$output = "databse querry failed: ".mysql_error()."<br/><br/>";
+			$output = "databse querry failed: ".mysqli_error($this->connection)."<br/><br/>";
 
 			$output .= "Last SQL query: ".$this->last_query;
 			die($output);
@@ -75,4 +75,4 @@ class MySQLDatabase{
 
 $database = new MySQLDatabase();
 
-?> 
+?>

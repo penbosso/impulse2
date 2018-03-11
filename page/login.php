@@ -35,6 +35,7 @@ if(isset($_POST['signup'])){
     if ($user->save()) {
         $session->message("Welcome! you have successfully signed up");
         redirect_to("index.php");
+        echo $_SESSION['message'];
     } else {
         $session->message("<br />"." unable to sign you up");
         redirect_to("");
@@ -45,7 +46,7 @@ if(isset($_POST['signup'])){
 ?>
 <html>
     <head>
-        <title>Quizbee</title>
+        <title>Impluse</title>
         <link rel="stylesheet" type="text/css" href="../css/login.css" />
     </head>
     <body>
@@ -65,15 +66,36 @@ if(isset($_POST['signup'])){
                 <?php echo output_message($session->message); ?>
             </div>
             <div id="know">
-                <h2><em>Do You Know?</em><br> The 10 Benefits benefits of quizzes and tests in educational practice<b>!!</b> </h2>
+                <h2><em>Do You Know?</em><br> The Benefits Of Effective And Immediate Communication<b>!!</b> </h2>
                 <p>
                     <ol>
-                        <li>Retrieval aids later retention. There is clear evidence from psychological experiments that practicing retrieval of something after learning it, for instance by taking a quiz or test, makes you more likely to retain it for the long term.</il>
-                        <li>Testing causes students to learn more from the next study episode. Essentially it reduces forgetting which makes the next related study area more productive.</il>
-                        <li>Testing produces better organization of knowledge by helping the brain organize material in clusters to allow better retrieval.</il>
+                        <li>Effective communication causes productivity to increase.</il>
+                        <li>Good and immediate communication eliminates barriers.</il>
+                        <li>Effective communication buids teams.</il>
                     </ol>
                     Login to find out more....
                 </p>
+                <h1>READ ME!</h1>
+                <p># IMPULSE
+Hello dearies and sugarplums,
+	Have you ever gotten frustrated to the point of wanting to tear your hair out simply because 
+	you could not receive an important message on time? Quite annoying right? That is why team Impulse
+	decided to come together to create this awesome app - IMPULSE. This app will decide which message is
+	important enough for you to receive even when offline in the form of an SMS. The most important feature, 
+	which makes our app unique, is the impulse check box. The impulse check box indicates how important the 
+	message is.
+
+###EXAMPLE
+for trial
+login as 
+userame = chris 
+password= Chris12
+
+lunch sandbox simulator with jenny : +233243344331 who is online and sedem : +23324334433 offline
+
+if impluse is checked the message will be send to all users in the group and sms will be sent to users offline instantly
+
+if impluse is not checked the message will be send to users in the group but only users online will see the message instantly </p>
 
             </div>
             

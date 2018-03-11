@@ -28,7 +28,7 @@ if (isset($_POST['submit'])) {
     <title></title>
     <link rel="stylesheet" type="text/css" href="../css/page.css">
     <link rel="stylesheet" type="text/css" href="../css/quiz.css">
-    
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
 </head>
 
 <body>
@@ -53,16 +53,19 @@ if (isset($_POST['submit'])) {
        </ul>
     </div>
     <div class="left_pane">
+    
          <div class="vertical-menu" >
              <h3>Too Important To MISS!</h3>
             <a href="#">Message</a>
             <div class="dropdown vertical-menu">
-            <a href="#" class="dropbtn">General Knowledge</a>
+            <a href="#" class="dropbtn">SMS Bundle</a>
                 <div class="dropdown-content">
-                <a href="#">Message</a>
-                <a href="g#">Message</a>
+                <a href="#">Montly</a>
+                <a href="g#">Weekly</a>
                 
             </div>
             </div> 
+            
         </div>
+        
     </div>
