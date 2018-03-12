@@ -117,7 +117,7 @@ if impluse is not checked the message will be send to users in the group but onl
                                 <td>Username:</td><td><input type='text' name='username' id='username' class="signupinput" required/></td>
                             </tr>
 							<tr>
-                                <td>Phone number:</td><td><input type='text' name='username' id='phone' class="signupinput" placeholder ="eg. +233123456789" maxlength="13" required/></td>
+                                <td>Phone number:</td><td><input type='text' name='phone' id='phone' class="signupinput" placeholder ="eg. +233123456789" maxlength="13" required/></td>
                             </tr>
                             <tr>
                                 <td>Password:</td><td><input type="password" name="password" id="password" class="signupinput" required/></td>
